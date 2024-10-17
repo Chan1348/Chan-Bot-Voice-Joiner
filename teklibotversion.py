@@ -1,13 +1,14 @@
 import discord
 from discord.ext import commands
+from os import system
 
-TOKEN = ''  # Botunuzun tokenini buraya ekleyin
+system("cls||clear")
+
+TOKEN = input("Botunuzun Tokenini Giriniz = ")
 SES_KANAL_ID = int(input("Ses Kanal ID Yapıştırınız = "))
+system("cls||clear")
 
-intents = discord.Intents.default()
-intents.message_content = True
-intents.guilds = True
-intents.voice_states = True
+intents = discord.Intents.all()
 
 bot = commands.Bot(command_prefix="!", intents=intents)
 
