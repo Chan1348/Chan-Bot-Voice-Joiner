@@ -43,7 +43,7 @@ async def create_bot(token, SES_KANAL_ID):
 
     @bot.event
     async def on_ready():
-        botundurumu = discord.Game("Coded By Chan discord: chan.dev")
+        botundurumu = discord.Game("Coded By Chan discord: chan.js")
         await bot.change_presence(status=discord.Status.idle, activity=botundurumu)
         voice_channel = bot.get_channel(SES_KANAL_ID)
         if voice_channel:
