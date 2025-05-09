@@ -1,5 +1,5 @@
 @echo off
 color a
-title Discord Voice Joiner by chanc2_
+title Discord Voice Joiner by chan.js
 python main.py
 pause
